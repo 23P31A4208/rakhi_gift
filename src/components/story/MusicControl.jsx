@@ -66,7 +66,7 @@ export function MusicControl({ active, autoStart = false, volume = 0.4 }) {
     <div className="fixed bottom-4 right-3 z-40 flex items-center gap-1 rounded-full border border-white/10 bg-ink-2/70 px-2 py-1.5 backdrop-blur-md sm:bottom-6 sm:right-6">
       <audio
         ref={audioRef}
-        src="/music/varshini.mp3"
+        src={`${import.meta.env.BASE_URL}music/varshini.mp3`}
         loop
         preload="auto"
         onError={() => setAvailable(false)}
